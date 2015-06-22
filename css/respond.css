@@ -1,0 +1,192 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	max-width: 960px; /* Define el ancho maximo de la página */
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+	margin: 0px;
+}
+
+/* MENU SECUNDARIO */
+.menu-wrapper {
+	padding: 10px 5px;
+	overflow: hidden;
+}
+
+	/* CARRITO */
+	.carrito-wrapper {
+		height: 40px; /* Define el alto del carrito */
+	}
+	.carrito-wrapper span {
+		margin-left: 5px;
+		padding: 5px;
+	}
+
+	/* MENU SECUNDARIO */
+	.menu-secundario {
+		margin: 0px;
+		padding: 0px;
+	}
+	.menu-secundario li {
+		margin-right: -4px;
+	}
+	.menu-secundario li a {
+		display: block;
+		padding: 10px;
+	}
+
+/* HEADER */
+.header {
+	padding: 20px 0px;
+}
+
+	/* LOGO */
+	.logo-wrapper {
+		margin: 0 auto;
+	}
+	.logo-wrapper img {
+		max-width: 100%;
+	}
+
+	/* BUSCADOR */
+	.buscador-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.buscador-wrapper h2 {
+		margin: 20px 0px;
+	}
+	.buscador select {
+		width: 100%;
+		padding: 10px;
+	}
+	.buscador input[type=text] {
+		width: 80%;
+		padding: 15px 10px;
+		padding-right: 5px;
+	}
+	.buscador button[type=submit] {
+		width: 10%;
+		padding: 15px 10px;
+		padding-left: 0px;
+	}
+
+/* NAV */
+.nav {
+	position: relative;
+}
+.nav li:hover > div {
+	display: block;
+}
+
+/* SOCIAL */
+.social {
+	display: none;
+}
+
+/* SIDEBAR */
+.sidebar {
+	width: 100%;
+}
+/* MAIN */
+.main {
+	width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+	
+
+
+}
+
+@media only screen and (min-width: 768px) {
+	
+	/* NAV */
+	.nav li > div {
+		position: absolute;
+		width: 100%;
+		left: 0px;
+	}
+	.nav li:hover > div {
+		display: table;
+	}
+	.nav > ul > li {
+		float: left;
+	}
+	.nav li > div ul {
+		width: calc(100% / 6);
+		z-index: 1000;
+	}
+	.nav li > div ul {
+		display: table-cell;
+	}
+
+	/* SIDEBAR */
+	.sidebar {
+		width: 25%;
+	}
+	/* MAIN */
+	.main {
+		width: 75%;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+	/* MENU SECUNDARIO */
+	.menu-wrapper {
+		padding: 10px;
+	}
+
+	/* HEADER */
+	.header {
+		padding: 20px;
+	}
+
+		/* LOGO */
+		.logo-wrapper {
+			float: left;
+		}
+
+		/* BUSCADOR */
+		.buscador-wrapper {
+			width: auto;
+			float: right;
+		}
+		.buscador-wrapper h2 {
+			margin-bottom: 10px;
+		}
+		.buscador select {
+			width: auto;
+			padding: 20px;
+		}
+		.buscador input[type=text] {
+			width: auto;
+			padding: 20px;
+			padding-right: 10px;
+		}
+		.buscador button[type=submit] {
+			width: auto;
+			padding: 20px;
+		}
+	
+	/* SOCIAL */
+	.social {
+		display: block;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+	
+	
+
+}
